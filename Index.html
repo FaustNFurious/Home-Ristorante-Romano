@@ -108,84 +108,93 @@
         
         <!-- Sezione Menu -->
         <div class="container-fluid menu-custom">
-            
             <div class="row">
                 <div class="col-12 text-center my-5">
-                    <h6>I NOSTRI PIATTI</h6>
-                    <h3 class="display-5">Il Menu</h3>
+                    <h6 class="display-6">I NOSTRI PIATTI</h6>
+                    <h3 class="display-2">Il Menu</h3>
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-evenly justify-content-center">
+            <!-- Carousel Bootstrap per il menu -->
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" data-bs-keyboard="true">
 
-                <!-- Card 1 -->
-                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
-                    <img src="./Media/Cacio-pepe.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
-                    
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h3 class="card-title">Cacio e Pepe</h3>
-                            <h3 class="card-title">€18</h3>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="menu-card bg-light rounded shadow p-0">
+                                <img src="./Media/Cacio-pepe.jpg" class="img-fluid w-100" alt="Cacio e Pepe">
+                                <div class="card-body p-3 text-start">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="mb-0">Cacio e Pepe</h4>
+                                        <h4 class="mb-0">€18</h4>
+                                    </div>
+                                    <p class="mb-0 mt-2 text-dark">Pasta tradizionale romana con pecorino romano e pepe nero macinato al momento.</p>
+                                </div>
+                            </div>
                         </div>
-                        <article class="card-text mb-4">
-                            Pasta tradizionale romana con pecorino romano e pepe nero
-                            macinato al momento
-                        </article>  
                     </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="menu-card bg-light rounded shadow p-0">
+                                <img src="./Media/Risotto-funghi.jpg" class="img-fluid w-100 " alt="Risotto ai Funghi">
+                                <div class="card-body p-3 text-start">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="mb-0">Risotto ai Funghi Porcini</h4>
+                                        <h4 class="mb-0">€22</h4>
+                                    </div>
+                                    <p class="mb-0 mt-2 text-dark">Risotto cremoso con funghi porcini freschi, parmigiano reggiano e prezzemolo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="menu-card bg-light rounded shadow p-0">
+                                <img src="./Media/saltimbocca.jpg" class="img-fluid w-100" alt="Saltimbocca">
+                                <div class="card-body p-3 text-start">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="mb-0">Saltimbocca alla Romana</h4>
+                                        <h4 class="mb-0">€26</h4>
+                                    </div>
+                                    <p class="mb-0 mt-2 text-dark">Saltimbocca di vitello con prosciutto crudo e salvia, serviti con vino bianco.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="menu-card bg-light rounded shadow p-0">
+                                <img src="./Media/tiramisù.jpg" class="img-fluid w-100" alt="Tiramisù">
+                                <div class="card-body p-3 text-start">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="mb-0">Tiramisù della Casa</h4>
+                                        <h4 class="mb-0">€12</h4>
+                                    </div>
+                                    <p class="mb-0 mt-2 text-dark">Il classico dolce italiano con savoiardi, mascarpone, caffè e cacao amaro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
-                    <img src="./Media/Risotto-funghi.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
-                    
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h3 class="card-title">Risotto ai Funghi Porcini</h3>
-                            <h3 class="card-title">€22</h3>
-                        </div>
-                        <article class="card-text mb-4">
-                            Risotto cremoso con funghi porcini freschi, parmigiano reggiano e
-                            prezzemolo
-                        </article>  
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
-                    <img src="./Media/saltimbocca.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
-                    
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h3 class="card-title">Saltimbocca alla Romana</h3>
-                            <h3 class="card-title">€26</h3>
-                        </div>
-                        <article class="card-text mb-4">
-                            Saltimbocca di vitello con prosciutto crudo e salvia, serviti con vino
-                            bianco
-                        </article>  
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
-                    <img src="./Media/tiramisù.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
-                    
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h3 class="card-title">Tiramisù della Casa</h3>
-                            <h3 class="card-title">€12</h3>
-                        </div>
-                        <article class="card-text mb-4">
-                            Il classico dolce italiano con savoiardi, mascarpone, caffè e cacao
-                            amaro
-                        </article>  
-                    </div>
-                </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="row">
-                <div class="col-12 justify-content-center align-items-center text-center">
-                    <button class="btn btn-primary mb-4">VEDI MENU COMPLETO</button>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary mb-5">VEDI MENU COMPLETO</button>
                 </div>
             </div>
 
@@ -216,14 +225,74 @@
     </main>    
 
     <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-4">
-        <p class="mb-0">© 2024 Ristorante Romano. Tutti i diritti riservati.</p>
-        <p class="mb-0">Via Romana 123, 00100 Roma, Italia | Tel: +39 06 123456 | Email: info@ristoranteromano.it</p>
+    <footer>
+
+        <!-- Sezione prenotazioni -->
+        <div class="container-fluid footer-custom text-center">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <p class="mt-5">VIENI A TROVARCI!</p>
+                    <h6 class="display-3 mb-5">Prenota il tuo tavolo ora!</h6>
+                    <article class="col-10 col-md-6 mx-auto mb-5 text-light">
+                        Vivi un'esperienza culinaria indimenticabile nel nostro ristorante. Prenota ora il tuo 
+                        tavolo e lasciati conquistare dai sapori autentici della cucina italiana. 
+                        Ti aspettiamo per condividere momenti speciali e deliziosi piatti che raccontano la nostra passione per la gastronomia.
+                    </article>
+
+                    <!-- Icone informative -->
+                    <div class="row justify-content-center align-items-center text-light">
+                        <div class="col-12 col-md-2">
+                            <i class="bi bi-calendar"></i>
+                            <p>TUTTI I GIORNI</p>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <i class="bi bi-clock"></i>
+                            <p>12:00 - 23:00</p>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <i class="bi bi-people-fill"></i>
+                            <p>2 - 12 PERSONE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="my-5">
+                        <button class="btn btn-outline-info">CONTATTACI PER PRENOTARE</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="container-fluid bg-black">
+            <div class="row justify-content-around ms-auto">
+
+                <div class="col-10 col-md-4 mb-5 mt-5">
+                    <h3>ROMANO</h3>
+                    <p class="mb-3">RISTORANTE • EST. 1985</p>
+                    <p>Autentica cucina italiana nel cuore di Roma. Tradizione, passione e qualità dal 1985.</p>
+                </div>
+                <div class="col-10 col-md-4 mb-5 mt-5">
+                    <h5>ORARI</h5>
+                    <p>Lunedì - Venerdì: 12:00 - 23:00</p>
+                    <p>Sabato - Domenica: 12:00 - 00:00</p>
+                </div>
+                <div class="col-10 col-md-4 mb-5 mt-5">
+                    <h5>CONTATTI</h5>
+                    <p><i class="bi bi-geo-alt"></i> Via della Tradizione 42 - 00180 Roma</p>
+                    <p><i class="bi bi-telephone"></i> +39 06 123 4567</p>
+                    <p><i class="bi bi-envelope"></i> info@ristoranteromano.it</p>
+                </div>
+
+            </div>
+        
+        </div>
+
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 
 
 </body>

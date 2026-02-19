@@ -9,17 +9,18 @@
     --green: rgb(0, 255, 0);
 }
 
+/* elimina overflow orizzontale dovuto a elementi di sfondo o di grandi dimensioni */
+html,body {
+    overflow-x: hidden;
+}
+
 header {
     background-image: url(./Media/fruit-cocktail-drinks-on-bar.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
-h1, p {
-    color: var(--white);
-}
-
-h3, h6 {
+h1, h3, h5, h6, p {
     color: var(--white);
 }
 
@@ -51,4 +52,70 @@ h3, h6 {
     background-image: url(./Media/San\ Valentino.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
+}
+
+.footer-custom {
+    background-image: url(./Media/notte-stellata.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Carousel controls più visibili su sfondi chiari */
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    background:none;
+}
+.carousel-control-prev i,.carousel-control-next i {
+    font-size:2rem;
+    color: black;
+    background: var(--white);
+    border-radius:50%;
+    padding:.25rem;
+}
+
+/* Indicators personalizzati */
+.carousel-indicators [data-bs-target] {
+    background: var(--white);
+}
+
+/* Stile centralizzato per le card del carousel (niente inline styles) */
+.menu-card {
+    max-width: 420px;
+}
+
+/* Controlli del carousel minimal: mostra solo la freccia, sfondo trasparente */
+#menuCarousel {
+    position:relative
+}
+
+#menuCarousel .carousel-control-prev, #menuCarousel .carousel-control-next {
+    background:transparent;
+    border:none;
+    box-shadow:none;
+    width:auto;
+    height:auto;
+    top:50%;
+    transform:translateY(-50%);
+
+}
+#menuCarousel .carousel-control-prev i, #menuCarousel .carousel-control-next i {
+    font-size:1.5rem;
+    color:#000;
+    padding:0
+}
+/* posiziona i controlli vicino alla card centrale (adatta se cambi .menu-card width) */
+#menuCarousel .carousel-control-prev {
+    left:calc(50% - 210px - 10px)
+}
+#menuCarousel .carousel-control-next {
+    right:calc(50% - 210px - 10px)
+}
+
+@media(max-width:576px){
+    #menuCarousel .carousel-control-prev {
+        left:8px
+    }
+    #menuCarousel .carousel-control-next {
+        right:8px
+    }
 }
