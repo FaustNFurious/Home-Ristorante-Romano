@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Romano</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./Style.css">
+    
+</head>
+
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Index.html">ROMANO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-grip-horizontal"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        
+        <div class="container-fluid vh-100 mt-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 text-center">
+                    <p class="my-5">NEL CUORE DI ROMA DAL 1905</p>
+                    <h1 class="display-2">Autentica Cucina Italiana</h1>
+                    <p class="mt-5">Dove Tradizione e sapori si incontrano per creare esperienze culinarie indimenticabili</p>
+                    <button class="btn btn-success my-5">PRENOTA UN TAVOLO</button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- Main -->
+    <main>
+        
+        <!-- Sezione Chi Siamo -->
+        <div class="container-fluid container-custom">
+            
+            <div class="row align-items-center justify-content-evenly">
+
+                <div class="col-12 col-md-4 mt-5">
+                    <h7>LA NOSTRA STORIA</h7>
+                    <h2 class="display-3">Chi Siamo</h2>
+                    <article class="my-5">
+                        Dal 1985, il Ristorante Romano è un punto di riferimento per gli
+                        amanti della vera cucina italiana. Situato nel cuore storico di Roma,
+                        offriamo un'esperienza cuclinaria autentica che celebra i sapori della
+                        tradizione romana e italiana.
+                    </article>
+                    <article>
+                        I nostri chef selezionano con cura ingredienti freschi e di stagione,
+                        trasformandoli in piatti che raccontano storie di passione e
+                        dedizione. Ogni portata è un omaggio alla nostra terra e alle sue
+                        radici gastronomiche.
+                    </article>
+                    <div class="d-flex my-4">
+                        <div class="col-6">
+                            <span>38+</span>
+                            <article>anni di esperienza</article>
+                        </div>
+                        <div class="col-6">
+                            <span>12+</span>
+                            <article>anni di esperienza</article>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-custom btn-info mt-4 mb-5">Leggi di più</button>
+                </div>
+
+                <div class="col-12 col-md-5 text-center mt-4 mb-4">
+                    <img src="./Media/colosseo.jpg" alt="colosseo" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <!-- Sezione Menu -->
+        <div class="container-fluid menu-custom">
+            
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h6>I NOSTRI PIATTI</h6>
+                    <h3 class="display-5">Il Menu</h3>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
+                    <img src="./Media/Cacio-pepe.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
+                    
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h3 class="card-title">Cacio e Pepe</h3>
+                            <h3 class="card-title">€18</h3>
+                        </div>
+                        <article class="card-text mb-4">
+                            Pasta tradizionale romana con pecorino romano e pepe nero
+                            macinato al momento
+                        </article>  
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
+                    <img src="./Media/Risotto-funghi.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
+                    
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h3 class="card-title">Risotto ai Funghi Porcini</h3>
+                            <h3 class="card-title">€22</h3>
+                        </div>
+                        <article class="card-text mb-4">
+                            Risotto cremoso con funghi porcini freschi, parmigiano reggiano e
+                            prezzemolo
+                        </article>  
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
+                    <img src="./Media/saltimbocca.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
+                    
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h3 class="card-title">Saltimbocca alla Romana</h3>
+                            <h3 class="card-title">€26</h3>
+                        </div>
+                        <article class="card-text mb-4">
+                            Saltimbocca di vitello con prosciutto crudo e salvia, serviti con vino
+                            bianco
+                        </article>  
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-light col-8 col-md-4 my-5 me-md-3 rounded shadow">
+                    <img src="./Media/tiramisù.jpg" alt="Immagine non più disponibile" class="img-fluid mt-3">
+                    
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h3 class="card-title">Tiramisù della Casa</h3>
+                            <h3 class="card-title">€12</h3>
+                        </div>
+                        <article class="card-text mb-4">
+                            Il classico dolce italiano con savoiardi, mascarpone, caffè e cacao
+                            amaro
+                        </article>  
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 justify-content-center align-items-center text-center">
+                    <button class="btn btn-primary mb-4">VEDI MENU COMPLETO</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sezione speciale menù San Valentino -->
+        <div class="container-fluid custom-SanValentino">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h3 class="display-3">Menù Speciale San Valentino</h3>
+                </div>
+            </div>
+
+            <div class="row align-items-start justify-content-around justify-content-center">
+                <!-- Immagine menu a sinistra -->
+                <div class="col-12 col-md-5 mb-5">
+                    <img src="./Media/menu-san-valentino_Tavola-disegno-1-scaled.png" alt="Menu San Valentino" class="img-fluid rounded shadow w-100">
+                </div>
+
+                <!-- Due immagini dei piatti a destra -->
+                <div class="col-12 col-md-5 d-flex flex-column">
+                    <img src="./Media/fettuccine-nero-seppia-sugo-mare-ristorante-mose.jpg" alt="Piatto 1" class="img-fluid rounded shadow mb-4 w-100">
+                    <img src="./Media/Cuore croccante al cioccolato e nocciole copia.jpg" alt="Piatto 2" class="img-fluid rounded shadow mb-4 w-100">
+                </div>
+            </div>
+        </div>
+        
+    </main>    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p class="mb-0">© 2024 Ristorante Romano. Tutti i diritti riservati.</p>
+        <p class="mb-0">Via Romana 123, 00100 Roma, Italia | Tel: +39 06 123456 | Email: info@ristoranteromano.it</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+
+
+</body>
+
+
+</html>

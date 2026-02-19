@@ -1,0 +1,54 @@
+/* Palette colori */
+:root {
+    --white: rgb(255,255,255);
+    --smoke: rgba(255, 255, 255, 0.75);
+    --yellow: rgb(255, 255, 0);
+    --blue: rgb(19, 6, 255);
+    --gray: rgba(220, 220, 220, 0.446);
+    --red: rgb(255, 0, 0);
+    --green: rgb(0, 255, 0);
+}
+
+header {
+    background-image: url(./Media/fruit-cocktail-drinks-on-bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1, p {
+    color: var(--white);
+}
+
+h3, h6 {
+    color: var(--white);
+}
+
+.container-custom {
+    background-image: url(./Media/notte-cuoricini.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: var(--smoke);
+}
+
+.menu-custom {
+    background-image: url(./Media/confezione-regalo-di-san-valentino-su-uno-sfondo-colorato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.btn-custom:hover {
+    background-color: var(--yellow);
+}
+
+.menu-custom img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+.custom-SanValentino {
+    background-image: url(./Media/San\ Valentino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
